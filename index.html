@@ -165,10 +165,10 @@
       <p>The last stop is the Movie Studio. Pick a scene, put actors in it, and tell them what to
         say and do. Her own movie plays at Movie Night, and then the Studio is hers.</p>
       <ul>
-        <li>Ten places, the whole cast, twenty props and animals, or any emoji.</li>
+        <li>Fifteen places, the whole cast, about fifty props and animals, or any emoji.</li>
         <li>Actors say their lines out loud, move, jump, spin, grow and hide.</li>
         <li>Add a function called <em>tapped</em> and the movie turns into a game.</li>
-        <li>Six starters to change and make her own.</li>
+        <li>Eight starters to change and make her own.</li>
       </ul>
 <div class="code">scene(<span class="s">"night"</span>)
 w = actor(<span class="s">"widget"</span>)
@@ -182,6 +182,35 @@ c.say(<span class="s">"Meow!"</span>)
     <figure>
       <img class="shot" src="img/movie.jpg" alt="A movie in code: five lines of Python on the left, and on the right Widget in front of a glass house asking 'Is that a cat?' with a cat beside him" loading="lazy">
       <img class="shot small" src="img/game.jpg" alt="A tap game: Python with a tapped function on the left, a star to catch on the right, and 'Score: 1'" loading="lazy">
+    </figure>
+  </div>
+
+  <div class="feature flip" id="games">
+    <div>
+      <p class="kicker">The game studio</p>
+      <h2>Then build a game.</h2>
+      <p>In the Studio, pick a place, add actors and drag them to where they start. Press
+        <em>Make it!</em> and the game writes that picture down as Python, with a pad that moves
+        the player. Then the code is hers to read and change.</p>
+      <ul>
+        <li>A pad on the screen, or the arrow keys and W, A, S and D on a keyboard.</li>
+        <li><em>pressed</em>, <em>touched</em> and <em>tick</em>: code that runs when a button goes down, when two actors bump, and as the clock ticks.</li>
+        <li>Her own actors and places, from the camera or a photo, and her own sounds, from the microphone. They stay on the device.</li>
+        <li>The Python Trail is not needed first: the Studio opens on the hill.</li>
+      </ul>
+<div class="code"><span class="k">def</span> pressed(key):
+    <span class="k">if</span> key == <span class="s">"right"</span>:
+        w.move(<span class="s">1</span>)
+    <span class="k">if</span> key == <span class="s">"a"</span>:
+        w.jump()
+
+<span class="k">def</span> touched(a, b):
+    sound(<span class="s">"ding"</span>)</div>
+    </div>
+    <figure>
+      <img class="shot" src="img/pad-game.jpg" alt="A pad game: Python with a pressed function on the left, and on the right Widget and a star on a playfield, with a pad of four arrows and an A button" loading="lazy">
+      <img class="shot small" src="img/builder.jpg" alt="The game builder: a park with a girl, a dog and a cat placed on it, and buttons to pick a place, add an actor and make the game" loading="lazy">
+      <img class="shot small" src="img/things.jpg" alt="The shelf of actors: a button to make my own, then Widget, the cast, a cat, a dog and more" loading="lazy">
     </figure>
   </div>
 
@@ -231,7 +260,9 @@ c.say(<span class="s">"Meow!"</span>)
     </figure>
     <p><strong>Hints come in steps.</strong> The first is a nudge. The second shows where to look. The third shows
       one whole way to do it, for her to read and build herself. And the <strong>Help Book</strong> has a page, with
-      code to run and change, for every piece of Python the game knows: 44 of them, from print to classes.</p>
+      code to run and change, for every piece of Python the game knows: 49 of them, from print to classes and games.</p>
+    <p>The last lesson, in the Studio, is about <strong>coding with an AI helper</strong>: you say what you want, it
+      writes code made of the same ideas, it can be wrong, and you are still the coder. (There is no AI in the game.)</p>
   </section>
 
   <section class="grownups" id="grownups">
@@ -271,7 +302,8 @@ c.say(<span class="s">"Meow!"</span>)
       <div class="card">
         <h3>🔒 Private by design</h3>
         <p>No ads, accounts, analytics or tracking, and the app never goes online. Everything she
-          writes is saved only on the device. <a href="privacy.html">Privacy policy</a></p>
+          writes, and any picture or sound she makes for a game, is saved only on the device.
+          <a href="privacy.html">Privacy policy</a></p>
       </div>
       <div class="card">
         <h3>🏙️ A real neighborhood</h3>
